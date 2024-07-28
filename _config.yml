@@ -1,7 +1,17 @@
 # The Site Configuration
 
+plugins:
+  - jekyll-remote-theme
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jemoji
+  - jekyll-include-cache
+
 # Import the theme
-theme: jekyll-theme-chirpy
+# theme: jekyll-theme-chirpy
+remote_theme: shihaoliu/jekyll-theme-chirpy
 
 # The language of the webpage › http://www.lingoes.net/en/translator/langcode.htm
 # If it has the same name as one of the files in folder `_data/locales`, the layout language will also be changed,
@@ -23,7 +33,8 @@ description: >- # used by seo meta and the atom feed
 
 # Fill in the protocol & hostname for your site.
 # e.g. 'https://username.github.io', note that it does not end with a '/'.
-url: "https://shihao.liu.us/chirpy-starter"
+#url: "https://shihao.liu.us/chirpy-starter"
+url: ""
 
 github:
   username: github_username # change to your github username
@@ -196,7 +207,7 @@ defaults:
       swcache: true
 
 sass:
-  style: compressed
+  style: expanded #compressed
 
 compress_html:
   clippings: all
